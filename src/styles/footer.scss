@@ -7,15 +7,14 @@
     background-color: $dark;
     color: $white;
     &__organizers {
-        background-color: red;
-        display: block;
-        // height: 50px;
-        div {
+        li {
             list-style: none;
-            max-width: 60px;
-            // display: inline;
+            float: right;
+            max-width: 80px;
+            &:nth-child(2) {
+                max-width: 120px;
+            }
         }
-        max-width: 300px;
         
     }
 }
