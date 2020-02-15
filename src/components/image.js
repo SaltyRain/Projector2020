@@ -18,6 +18,13 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      landscapeImage: file(relativePath: { eq: "test.jpg" }) {
+        childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
