@@ -10,9 +10,8 @@
     h2 {
         margin-top: 2rem;
     }
-    &__section {
-    }
     &__image {
+        padding: 30px 0;
         margin: auto;
         &_in-text-right {
             float: right;
@@ -32,6 +31,13 @@
         }
     }
 
+}
+
+
+.alert-success {
+    color: $dark;
+    background-color: #DCDCDC;
+    border-color: $dark;
 }
 
 @media (max-width: 767.80px)  {

@@ -36,7 +36,8 @@ return (
     <div className="container">
       <Navbar  expand="lg">
     <Navbar.Brand href="#home">
-      <Img fluid={data.logo.childImageSharp.fluid}/>
+      {/* <Img fluid={data.logo.childImageSharp.fluid}/> */}
+      Зато не детдом
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
@@ -50,7 +51,7 @@ return (
             offset={-70}
             duration={500}
             >
-              Ссылка1
+              Вступление
           </Link>
           <Link
             className="nav-link"
@@ -61,7 +62,7 @@ return (
             offset={-70}
             duration={500}
             >
-              Ссылка2
+              Часть 1
           </Link>
           <Link
             className="nav-link"
@@ -72,10 +73,19 @@ return (
             offset={-70}
             duration={500}
             >
-              Ссылка3
+              Часть 2
           </Link>
-        {/* <Nav.Link href="#section2">Ссылка2</Nav.Link> */}
-        {/* <Nav.Link href="#section3">Ссылка3</Nav.Link> */}
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="section4"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >
+              Часть 3
+          </Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

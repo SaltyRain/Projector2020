@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="footer__wrapper container">
             <div className="row justify-content-between">
                 <div className="col">
-                    <p>Подвал</p>
+                    {/* <p>Подвал</p> */}
                 </div>
                 <section className="col">
                     <h4 className="visually-hidden">Организаторы хакатона</h4>

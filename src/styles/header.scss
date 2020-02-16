@@ -1,11 +1,16 @@
 @import "./variables.scss";
 
+.navbar-light .navbar-brand {
+    color: $white;
+    // text-transform: uppercase;
+}
+
 .header {
     position: fixed;
     z-index: 1;
     background-color: $dark;
     color: $white;
-    height: 100px;
+    height: 60px;
     a {
         color: $white;
         cursor: pointer;
@@ -39,7 +44,7 @@
 }
 
 .header .navbar-light .navbar-nav .nav-link.active {
-    color: #123979;
+    color: $gray;
 }
 
 @media (max-width: 767.80px) {
@@ -123,7 +128,8 @@
             }
         }
     }
-    
+
+
     .navbar-light .navbar-collapse .nav-link {
         color: $white;
     }
