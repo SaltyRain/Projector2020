@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes, { func } from "prop-types"
 import React from "react"
 
@@ -17,6 +16,7 @@ import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 import FormControl from "react-bootstrap/FormControl"
 
+import { Link, animateScroll as scroll} from "react-scroll";
 
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
@@ -41,9 +41,41 @@ return (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
       <Nav>
-        <Nav.Link href="#section1">Ссылка1</Nav.Link>
-        <Nav.Link href="#section2">Ссылка2</Nav.Link>
-        <Nav.Link href="#section3">Ссылка3</Nav.Link>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="section1"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >
+              Ссылка1
+          </Link>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="section2"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >
+              Ссылка2
+          </Link>
+          <Link
+            className="nav-link"
+            activeClass="active"
+            to="section3"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            >
+              Ссылка3
+          </Link>
+        {/* <Nav.Link href="#section2">Ссылка2</Nav.Link> */}
+        {/* <Nav.Link href="#section3">Ссылка3</Nav.Link> */}
       </Nav>
     </Navbar.Collapse>
   </Navbar>
